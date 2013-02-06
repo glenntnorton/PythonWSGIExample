@@ -1,0 +1,16 @@
+<html>
+<body>
+<h2>Environment Variables</h2>
+
+
+#if $env
+    #for $s in $env.keys()
+        $s == $env[$s]<br />
+    #end for
+#else
+    no env
+#end if
+
+</body>
+</html>
+

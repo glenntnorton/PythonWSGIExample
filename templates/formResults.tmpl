@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>Form Page</h2>
+
+Hello, your name is $name<br />
+
+#if $session
+    #for $s in $session.keys()
+        $s == $session[$s]
+    #end for
+#else
+    no session
+#end if
+
+</body>
+</html>
+
